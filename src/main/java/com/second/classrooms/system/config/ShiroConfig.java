@@ -54,7 +54,7 @@ public class ShiroConfig {
         // 指定要求登录时的链接
         bean.setLoginUrl("/login");
         // 登录成功后要跳转的链接
-        bean.setSuccessUrl("/home");
+        bean.setSuccessUrl("/index");
         // 未授权时跳转的界面;
         bean.setUnauthorizedUrl("/error");
 
@@ -73,15 +73,17 @@ public class ShiroConfig {
         filterMap.put("/js/*", "anon");
         filterMap.put("/js/*/*", "anon");
         filterMap.put("/js/*/*/*", "anon");
-        filterMap.put("/images/*/**", "anon");
-        filterMap.put("/layui/*", "anon");
-        filterMap.put("/layui/*/**", "anon");
-        filterMap.put("/treegrid/*", "anon");
-        filterMap.put("/treegrid/*/*", "anon");
+        filterMap.put("/img/*/**", "anon");
+        filterMap.put("/libs/*", "anon");
+        filterMap.put("/libs/*/**", "anon");
+        filterMap.put("/ruoyi/*", "anon");
+        filterMap.put("/ruoyi/*/*", "anon");
         filterMap.put("/fragments/*", "anon");
         filterMap.put("/layout", "anon");
-        filterMap.put("/home", "anon");
-        filterMap.put("/user/login", "anon");
+        filterMap.put("/index", "anon");
+        filterMap.put("/i18/*", "anon");
+        filterMap.put("/fonts/*", "anon");
+       // filterMap.put("/fonts/*/**", "anon");
         filterMap.put("/permission/getUserPerms", "anon");
 
         // <!-- authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问【放行】-->

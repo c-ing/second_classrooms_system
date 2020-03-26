@@ -17,9 +17,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="${stx}/favicon.ico" />
     <style type="text/css">label.error { position:inherit;  }</style>
-    <script>
+   <#-- <script>
         if(window.top!==window.self){alert('未登录或登录超时。请重新登录');window.top.location=window.location};
-    </script>
+    </script>-->
 </head>
 <body class="signin">
 <div class="signinpanel">
@@ -63,10 +63,10 @@
 <script src="${stx}/js/jquery.min.js" ></script>
 <script src="${stx}/js/bootstrap.min.js"></script>
 <!-- 验证插件 -->
-<script src="${stx}/ajax/libs/validate/jquery.validate.min.js" ></script>
-<script src="${stx}/ajax/libs/validate/messages_zh.min.js" ></script>
-<script src="${stx}/ajax/libs/layer/layer.min.js" ></script>
-<script src="${stx}/ajax/libs/blockUI/jquery.blockUI.js" ></script>
+<script src="${stx}/libs/validate/jquery.validate.min.js" ></script>
+<script src="${stx}/libs/validate/messages_zh.min.js" ></script>
+<script src="${stx}/libs/layer/layer.min.js" ></script>
+<script src="${stx}/libs/blockUI/jquery.blockUI.js" ></script>
 <script src="${stx}/ruoyi/js/ry-ui.js" ></script>
 <script src="${stx}/ruoyi/login.js"></script>
 </body>

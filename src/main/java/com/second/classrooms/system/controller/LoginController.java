@@ -29,14 +29,14 @@ public class LoginController extends BaseController {
     @ResponseBody
     public AjaxResult ajaxLogin(String username, String password, Boolean rememberMe)
     {
-        UsernamePasswordToken token = new UsernamePasswordToken(username, password, rememberMe);
+       /* UsernamePasswordToken token = new UsernamePasswordToken(username, password, rememberMe);
         Subject subject = SecurityUtils.getSubject();
         try
         {
-            subject.login(token);
+            subject.login(token);*/
             return success();
         }
-        catch (AuthenticationException e)
+       /* catch (AuthenticationException e)
         {
             String msg = "用户或密码错误";
             if (StringUtils.isNotEmpty(e.getMessage()))
@@ -44,6 +44,6 @@ public class LoginController extends BaseController {
                 msg = e.getMessage();
             }
             return error(msg);
-        }
-    }
+        }*/
+   // }
 }
