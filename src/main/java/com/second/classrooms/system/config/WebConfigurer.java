@@ -19,5 +19,5 @@ public class WebConfigurer implements WebMvcConfigurer {
     public ViewInterceptor ViewInterceptor() {
         return new ViewInterceptor();
     }
-  // http://doc.ruoyi.vip/ruoyi/document/xmjs.html#%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84
+
 }
