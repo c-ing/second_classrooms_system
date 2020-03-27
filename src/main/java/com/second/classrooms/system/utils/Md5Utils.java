@@ -64,4 +64,11 @@ public class Md5Utils
             return s;
         }
     }
+
+    public static void main(String[] args) {
+        //String password = Md5Utils.MD5("admin123");
+        String password2 = Md5Utils.hash("admin123");
+        //System.out.println(password);
+        System.out.println(password2);
+    }
 }

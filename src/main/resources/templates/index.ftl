@@ -31,6 +31,23 @@
         </a>
         <div class="sidebar-collapse">
             <ul class="nav" id="side-menu">
+                <#list menus as menu>
+                    <a href="#"><i class="fa fa-desktop"></i>
+                        <span class="nav-label">${menu.menuName}</span>
+                        <span class="fa arrow"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <#list menu.children as cmenu>
+                            <#if (cmenu.children)??>
+                                <a class="menuItem" href="${emenu.url}">
+                                    ${menu.menuName}
+                                </a>
+                            <#else >
+
+                            </#if>
+                        </#list>
+                    </ul>
+                </#list>
 
                 <li>
                     <a href="#"><i class="fa fa-desktop"></i><span class="nav-label">实例演示</span><span class="fa arrow"></span></a>
